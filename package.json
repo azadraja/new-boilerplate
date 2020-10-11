@@ -1,0 +1,16 @@
+{
+  "name": "react-new-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
+  "author": "Raja Avinash",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5"
+  }
+}
