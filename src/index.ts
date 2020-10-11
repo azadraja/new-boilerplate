@@ -12,11 +12,11 @@ interface User {
 
 function getFullname(user: User) {
   const {
-    name: { first, middle, last },
+    name: {first, middle, last},
   } = user;
   return [first, middle, last].filter(Boolean).join('');
 }
 
 add(1, 2);
 
-getFullname({ name: { first: 'Joe', middle: 'Bud', last: 'Matthews' } });
+getFullname({name: {first: 'Joe', middle: 'Bud', last: 'Matthews'}});
