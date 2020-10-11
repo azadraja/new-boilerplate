@@ -1,8 +1,16 @@
-function add(a, b) {
+function add(a: number, b: number): number {
   return a + b;
 }
 
-function getFullname(user) {
+interface User {
+  name: {
+    first: string;
+    middle: string;
+    last: string;
+  };
+}
+
+function getFullname(user: User) {
   const {
     name: {first, middle, last},
   } = user;
