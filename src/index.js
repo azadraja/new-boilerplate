@@ -1,10 +1,14 @@
-class Apple {
-  constructor() {
-    this.apple = 'apple';
-  }
-  great() {
-    console.log('yy');
-  }
+function add(a, b) {
+  return a + b;
 }
 
-export const app = new Apple();
+function getFullname(user) {
+  const {
+    name: {first, middle, last},
+  } = user;
+  return [first, middle, last].filter(Boolean).join('');
+}
+
+add(1, 2);
+
+getFullname({name: {first: 'Joe', middle: 'Bud', last: 'Matthews'}});
